@@ -1,3 +1,12 @@
 #!/usr/bin/env zsh
 
-stow $HOME/.dotfiles
+DOTFILES=$HOME/.dotfiles
+
+pushd $DOTFILES
+
+stow -D .
+
+stow .
+
+popd
+
