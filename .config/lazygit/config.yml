@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/jesseduffield/lazygit/master/schema/config.json
+# someone's config for lazygit, we could learn from them, https://codeberg.org/DomDaddyXXX/dotfiles/src/branch/master/config/lazygit.yml
+# cyberdream theme for lazygit
+git:
+  branchLogCmd: 'git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium {{branchName}} --'
+  allBranchesLogCmd: 'git log --graph --all --color=always --abbrev-commit --decorate --date=relative  --pretty=medium'
+gui:
+  border: rounded
+  theme:
+    activeBorderColor:
+      - "#5ef1ff"
+      - bold
+    inactiveBorderColor:
+      - "#7b8496"
+    searchingActiveBorderColor:
+      - "#ff5ef1"
+    optionsTextColor:
+      - "#ffffff"
+    selectedLineBgColor:
+      - "#3c4048"
+    cherryPickedCommitBgColor:
+      - "#3c4048"
+    cherryPickedCommitFgColor:
+      - "#ff5ea0"
+    unstagedChangesColor:
+      - "#ffbd5e"
+    defaultFgColor:
+      - "#ffffff"
+  authorColors:
+    '*': '#b4befe'
